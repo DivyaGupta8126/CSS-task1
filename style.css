@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rem;
+    padding-top: 4rem;
+}
+
+.upper {
+    display: flex;
+}
+
+.upperLeft {
+    /* border: 2px solid red; */
+    width: 40%;
+    color: #502154;
+}
+.upperLeft h1 {
+    font-weight: bolder;
+    width: 80%;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 40px;
+    
+}
+.upperLeft p {
+    line-height: 25px;
+}
+
+.upperRight {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+}
+.upperRight p {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.review, .report, .tech {
+    border: none;
+    border-radius: 5px;
+    background-color: #f7f2f8;
+    padding: 10px 0;
+    padding-left: 20px;
+    width: 22rem;
+    color: #502154;
+    font-weight: bold;
+}
+
+.review {
+    margin-top: 2rem;
+}
+
+.report {
+    margin: 20px 0;
+    margin-left: 2.2rem;
+}
+
+.tech {
+    margin-left: 4.2rem;
+}
+
+.common {
+    width: 16.4rem;
+    padding: 30px 20px;
+    border-radius: 8px;
+    background-color: #511f50;
+}
+
+.colt {
+    position:relative;
+    top: -28px;
+    display: inline-block;
+    margin-left: 15px;
+    color:#bdaabf;
+}
+
+.verified {
+    margin-left: 70px;
+    position: relative;
+    top: -26px;
+    color: #94447e;
+}
+
+.common img {
+    border-radius: 100%;
+    size: 20px;
+}
+
+.common p {
+    color: #bdaabf;
+}
+
+.lower {
+    display: flex;
+}
+
+.boxTwo {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+.boxThree {
+    position: relative;
+    left: 40px;
+    top: 50px;
+
+}
+
+@media screen and (max-width : 450px) {
+    .box {
+        margin: 80px 0;
+    }
+    .upper, .upperRight, .lower {
+        flex-direction: column;
+    }
+
+    .box {
+        padding: 0;
+    }
+    .common {
+        position: static;
+        margin: auto;
+    }
+    .review, .report, .tech {
+        position: static;
+        margin: auto;
+        width: 18rem;
+        text-align: center;
+
+        padding: 20px;
+
+    }
+    .upperRight {
+        margin-left: 0;
+    }
+
+     .upperLeft {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .upperLeft p {
+        font-size: 1.2rem;
+        width: 95%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .upperLeft h1 {
+        text-align: center;
+        margin: auto;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .report {
+        margin: 20px auto;
+    }
+
+    .tech {
+        margin-bottom: 40px;
+    }
+
+    .boxTwo {
+        margin: 40px auto;
+    }
+
+}
